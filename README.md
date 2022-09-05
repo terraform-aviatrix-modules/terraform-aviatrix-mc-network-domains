@@ -28,7 +28,7 @@ module "network_domains" {
   ]
 
   associations = {
-    "spoke1" = { #When using the [mc-spoke module](https://github.com/terraform-aviatrix-modules/terraform-aviatrix-mc-spoke), you can also create the association as part of that module by setting `network_domain`.
+    "spoke1" = { #When using the mc-spoke module, you can also create the association as part of that module by setting `network_domain`.
       network_domain = "green",
       transit_gw     = "transit1",
     },
